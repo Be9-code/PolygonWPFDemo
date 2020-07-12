@@ -1,0 +1,100 @@
+{
+	"appValues": {
+		"ApiKey": "",
+		"VerboseInfo": true,
+		"CloseWindowOnEscape": true
+	},
+	"ListContainers": [
+		{
+			"ListType": "EquitiesSymbols",
+			"ListRef": [
+				"AAPL",
+				"AMZN",
+				"BABA",
+				"BAC",
+				"DIA",
+				"FB",
+				"IWM",
+				"MSFT",
+				"NFLX",
+				"THC",
+				"TSLA",
+				"X"
+			]
+		},
+		{
+			"ListType": "ForexSymbols",
+			"ListRef": [
+				"EUR/USD",
+				"NZD/USD",
+				"USD/CNH",
+				"USD/EUR",
+				"USD/JPY"
+			]
+		},
+		{
+			"ListType": "CryptoSymbols",
+			"ListRef": [
+				"BCH/ETH",
+				"BTC/ETH",
+				"BTC/USD",
+				"ETH/BTC",
+				"ETH/XRP",
+				"XRP/BTC",
+				"XRP/LTC"
+			]
+		},
+		{
+			"ListType": "EquitiesPresetSymbols",
+			"ListRef": [
+				"AMZN",
+				"AAPL",
+				"FB",
+				"MSFT",
+				"NFLX",
+				"TSLA"
+			]
+		},
+		{
+			"ListType": "ForexPresetSymbols",
+			"ListRef": [
+				"USD/EUR",
+				"USD/CNH"
+			]
+		},
+		{
+			"ListType": "CryptoPresetSymbols",
+			"ListRef": [
+				"BTC/USD"
+			]
+		},
+		{
+			"ListType": "ValidEquitiesChannels",
+			"ListRef": [
+				"T",
+				"Q",
+				"A",
+				"AM"
+			]
+		},
+		{
+			"ListType": "ValidForexChannels",
+			"ListRef": [
+				"C",
+				"CA",
+				"BONDS",
+				"COMMODITIES",
+				"METALS"
+			]
+		},
+		{
+			"ListType": "ValidCryptoChannels",
+			"ListRef": [
+				"XT",
+				"XQ",
+				"XS",
+				"XL2"
+			]
+		}
+	]
+}

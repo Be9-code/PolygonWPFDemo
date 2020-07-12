@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="PolygonWPFDemo.Controls.EnterApiKeyControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Loaded="OnApiKeyControlLoaded"
+	Background="#FF303030"
+    FontSize="14"
+    Height="100" Width="600" KeyDown="UserControl_KeyDown">
+
+	<Grid x:Name="LayoutRoot" Margin="2">
+
+		<Border BorderBrush="LightSkyBlue" BorderThickness="3" 
+					 Margin="4,4,0,0" CornerRadius="3"
+					 Height="Auto" Width="Auto">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="50" />
+					<RowDefinition Height="40" />
+				</Grid.RowDefinitions>
+				<TextBox x:Name="ApiKeyText" Text="Enter or paste your API key" Grid.Row="0"
+					Margin="10" VerticalAlignment="Center" Padding="0,5" FontWeight="Normal"
+					Width="Auto" Height="30" FontSize="16" Foreground="Black"
+					TextWrapping="Wrap" TextAlignment="Center" 
+					KeyDown="ApiKeyText_KeyDown">
+				</TextBox>
+
+				<Grid Grid.Row="1" Margin="0,0,0,0" HorizontalAlignment="Center" >
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="180" />
+						<ColumnDefinition Width="180" />
+					</Grid.ColumnDefinitions>
+
+					<Button x:Name="OKButton" Content="OK" Grid.Column="0" 
+						HorizontalAlignment="Center" 
+						Margin="0,0,0,0" VerticalAlignment="Top" Width="116" Height="25"
+						Click="OnOKButtonClicked"/>
+
+					<Button x:Name="CancelButton" Content="Cancel" Grid.Column="1" 
+						HorizontalAlignment="Center" 
+						Margin="0,0,0,0" VerticalAlignment="Top" Width="116" Height="25"
+						Click="Cancel_Click"/>
+				</Grid>
+			</Grid>
+		</Border>
+
+	</Grid>
+</UserControl>

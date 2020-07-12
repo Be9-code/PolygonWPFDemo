@@ -1,0 +1,70 @@
+﻿<RTControls:RTDataBase x:Class="PolygonWPFDemo.Controls.RTForexData"
+			xmlns:RTControls="clr-namespace:PolygonWPFDemo.Controls"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+            xmlns:local="clr-namespace:PolygonWPFDemo.Controls"
+            mc:Ignorable="d" 
+            d:DesignHeight="20" d:DesignWidth="500"
+			Background="Transparent" Foreground="White"
+			>
+    <Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="20" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+
+		<!--Header-->
+		<Border BorderBrush="SlateBlue" BorderThickness="2" 
+					 Margin="0,0,0,0" x:Name="ForexClusterHeaderBorder" CornerRadius="3"
+					 Height="Auto" Width="Auto">
+			<Grid x:Name="ForexRTClusterDataHeader" Grid.Row="0"
+				Height="18" Margin="0,-2,0,0"  
+				HorizontalAlignment="Left" >
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="100" />
+					<ColumnDefinition Width="100" />
+					<ColumnDefinition Width="100" />
+					<ColumnDefinition Width="100" />
+				</Grid.ColumnDefinitions>
+
+				<TextBlock x:Name="ForexClusterName" Grid.Column="0"
+						HorizontalAlignment="Center" Margin="0,2,0,0" 
+						Background="Transparent" Foreground="LightSteelBlue"
+						Text="" VerticalAlignment="Center"
+						FontSize="14" FontFamily="Arial" FontWeight="Bold"
+						/>
+				<TextBlock Grid.Column="1"
+						HorizontalAlignment="Center" Margin="0,2,0,0" 
+						Background="Transparent" Foreground="White"
+						Text="Bid" VerticalAlignment="Center"
+						FontSize="14" FontFamily="Arial" FontWeight="DemiBold"
+						/>
+				<TextBlock Grid.Column="2"
+						HorizontalAlignment="Center" Margin="0,2,0,0" 
+						Background="Transparent" Foreground="White"
+						Text="Spread" VerticalAlignment="Center"
+						FontSize="14" FontFamily="Arial" FontWeight="DemiBold"
+						/>
+				<TextBlock Grid.Column="3"
+						HorizontalAlignment="Center" Margin="0,2,0,0" 
+						Background="Transparent" Foreground="White"
+						Text="Ask" VerticalAlignment="Center"
+						FontSize="14" FontFamily="Arial" FontWeight="DemiBold"
+						/>
+			</Grid>
+		</Border>
+
+		<!--Realtime Data Grid-->
+		<Grid x:Name="ForexRTClusterDataGrid" Grid.Row="1" 
+				Height="20" Margin="3,2,0,0.2"  
+				HorizontalAlignment="Left" >
+
+				<!--Note: RTDataRows are added/removed in code behind-->
+
+		</Grid>
+
+	</Grid>
+
+</RTControls:RTDataBase>
