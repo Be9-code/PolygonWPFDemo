@@ -23,13 +23,6 @@ This is a basic demo of advising and receiving JSON trades, quotes, etc. It uses
 	•	Manual entered symbols are not saved when the app is closed
 		o	The Escape key will close the window
 	
-	Note: displayed text can be cleared by double clicking on the text display
 
-•	PGApi.cs
 
-	o	Wrapper for socket functionality in PgonWebInterface.cs
 
-•	PgonWebInterface.cs
-
-	o	Socket functionality
-	o	Connectivity management
